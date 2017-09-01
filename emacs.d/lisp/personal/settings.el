@@ -1,5 +1,4 @@
-(setq inhibit-startup-screen t) ; disable welcome screen
-
+(setq inhibit-startup-screen t)   ; disable welcome screen
 (setf ring-bell-function 'ignore) ; disable alarm bell
 
 (when (not (display-graphic-p))
@@ -18,6 +17,10 @@
 
 (setq-default indent-tabs-mode nil) ; use spaces instead of tabs
 
+(fset 'yes-or-no-p 'y-or-n-p)            ;; enable y/n answers to yes/no
+
 ;; KEYBINDINGS ;;
 ; Toggle EVIL mode
 (global-set-key (kbd "<f6>") 'evil-mode)
+; Revert Buffer
+(global-set-key (kbd "<f5>") 'revert-buffer)
