@@ -244,3 +244,9 @@
 [submodule "shell/plugins/dircolors-solarized"]
 	path = shell/plugins/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "emacs.d/vendor/emacs-htmlize"]
+	path = emacs.d/vendor/emacs-htmlize
+	url = https://github.com/hniksic/emacs-htmlize.git
+[submodule "emacs.d/vendor/org-bullets"]
+	path = emacs.d/vendor/org-bullets
+	url = https://github.com/sabof/org-bullets.git
