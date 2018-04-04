@@ -203,3 +203,16 @@
   (linum-relative-on)
   (setf linum-relative-format "%3s "
         linum-relative-current-symbol ""))
+(use-package htmlize
+  :load-path "vendor/emacs-htmlize"
+  :config
+  (setq htmlize-output-type 'font)
+  )
+
+(use-package org-bullets
+:ensure t
+:init
+(setq org-bullets-bullet-list
+'("◉" "◎" "⚫" "○" "►" "◇"))
+:config
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
