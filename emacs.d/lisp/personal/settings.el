@@ -1,5 +1,4 @@
-(setq inhibit-startup-screen t) ; disable welcome screen
-
+(setq inhibit-startup-screen t)   ; disable welcome screen
 (setf ring-bell-function 'ignore) ; disable alarm bell
 
 (when (not (display-graphic-p))
@@ -17,6 +16,8 @@
 (global-hl-line-mode 1) ; highlight current line
 
 (setq-default indent-tabs-mode nil) ; use spaces instead of tabs
+
+(fset 'yes-or-no-p 'y-or-n-p)            ;; enable y/n answers to yes/no
 
 ;; KEYBINDINGS ;;
                                         ; Toggle EVIL mode
@@ -960,3 +961,6 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
 ;         ((org-agenda-compact-blocks t))) ;; options set here apply to the entire block
 ;        ;; ...other commands here
 ;                ))
+
+; Revert Buffer
+(global-set-key (kbd "<f5>") 'revert-buffer)
