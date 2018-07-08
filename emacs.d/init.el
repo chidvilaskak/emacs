@@ -10,6 +10,7 @@
 (load "personal/packages")
 (load "personal/theme")
 (load "personal/settings")
+(load "personal/org_settings")
 
 (let ((custom "~/.emacs_local"))
   (when (file-exists-p custom)
